@@ -1,0 +1,14 @@
+#define A 2
+word c = 0x1245;
+int add(int v1,int v2);                               
+byte func(byte value);
+int add(int v1, int v2)
+{
+	return (v1 + v2);
+}
+byte func(byte value)
+{
+	byte tmp = value;
+}
+
+

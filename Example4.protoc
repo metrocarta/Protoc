@@ -1,0 +1,55 @@
+#define A 2
+#define SUM(a,b) (a+b)
+module program extends super_program
+{
+	@property int z = 7, w = (z - 1), q = (z + 1 * 5 - 1 + w - 2), o = q*w - (w & 0x20);
+	@var int<z> var1, byte<REG, z - 1> var2[z];
+    @var byte<DIRECT,0> h;
+    @property int r = 7;
+	@code()
+    @org(o)
+		mov(var1,var2);
+    Loop:
+        add(var1+1,var2[2]);
+        djnz(Loop);
+        anl(DIRECT[1],h);
+        sjmp(Loop);
+	@endc
+}
+
+void test_fja(int (*some_fja)(int a),int a);
+byte (*ptr_func)();
+int (*main_some_fja)(int a);
+int  fja(int p);
+byte * func(byte  b1, byte * b2);
+int main()
+{	
+	int arr[10] ;
+	int *ptr;
+	*ptr =  arr[0];
+	arr[1] = *ptr;
+	ptr = & arr[0];
+	//ptr_func = & func;
+	test_fja(fja,0);
+	main_some_fja = & fja;
+}
+int  fja(int p)
+{
+	int result;
+	return p+result;
+}
+byte * func(byte  b1, byte * b2)
+{
+	return b2;
+}
+void test_fja(int (*some_fja)(int a),int a)
+{
+	int r = 2, *q;
+	byte t;
+	//r = fja(r);
+	r = (*some_fja)(r);
+	//q = func(1,2) ; 
+	return ;
+}
+
+

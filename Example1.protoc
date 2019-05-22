@@ -1,0 +1,35 @@
+﻿#define AŠĐ 100
+#include "test.h"
+
+word  c = 0x1245;
+//byte proba();
+byte proba(){
+	byte result = 0x12;
+	return result;
+}
+void main(){
+	int  s = (4-2+AŠĐ+20),r = (5+6);
+	int o = r + (s*r - s&0x20);
+	byte arr[] = {1,2,0};
+	s=(s+1)*(s-1);
+	s = arr[0];
+	r = 1+s-r;
+	if(s <= r){
+	   proba();
+	   s = s + 2;
+	   s = add(r,s);
+	   s = SUM(s,3);
+	}
+	
+	do{
+		int aa = 0;
+		//if (aa>0)
+		{
+			int u = 1;
+			++u;
+		}
+	} while (s>0);
+}
+
+
+

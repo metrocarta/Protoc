@@ -1,0 +1,19 @@
+﻿// Dragan Golubović
+/*byte f(byte b);
+byte f(byte b)
+{
+	byte tmp;
+	tmp = b;
+}
+byte Ćerpič = 1;*/
+void main(){
+	int s = 0;// Ćerpič;
+	//int r = 0;
+	if(s < 1){
+	  /*{
+		  int dragan = 1;
+	  }*/
+	   s = s+1;
+	   //s = f(Ćerpič);
+	}
+}
